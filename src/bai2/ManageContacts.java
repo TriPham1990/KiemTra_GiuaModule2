@@ -28,7 +28,8 @@ public class ManageContacts {
 
     public void removeContact(String phoneNumber){
         for(int i = 0; i < manageContacts.size(); i++){
-            if(manageContacts.get(i).getPhoneNumber() == phoneNumber){
+            boolean isCheckPhoneNumber = manageContacts.get(i).getPhoneNumber() == phoneNumber;
+            if(isCheckPhoneNumber){
                 manageContacts.remove(i);
             }
         }
@@ -36,7 +37,8 @@ public class ManageContacts {
 
     public void searchContactByFirtName(String firtName){
         for(int i = 0; i < manageContacts.size(); i++){
-            if(manageContacts.get(i).getFirtName() == firtName){
+            boolean isCheckFirtName = manageContacts.get(i).getFirtName() == firtName;
+            if(isCheckFirtName){
                 getInfoContact(i);
             }
         }
@@ -44,7 +46,8 @@ public class ManageContacts {
 
     public void searchContactByLastName(String lastName){
         for(int i = 0; i < manageContacts.size(); i++){
-            if(manageContacts.get(i).getLastName() == lastName){
+            boolean isCheckLastName = manageContacts.get(i).getLastName() == lastName;
+            if(isCheckLastName){
                 getInfoContact(i);
             }
         }
@@ -52,7 +55,8 @@ public class ManageContacts {
 
     public void searchContactByPhoneNumber(String phoneNumber){
         for(int i = 0; i < manageContacts.size(); i++){
-            if(manageContacts.get(i).getPhoneNumber() == phoneNumber){
+            boolean isCheckPhoneNumber = manageContacts.get(i).getPhoneNumber() == phoneNumber;
+            if(isCheckPhoneNumber){
                 getInfoContact(i);
             }
         }

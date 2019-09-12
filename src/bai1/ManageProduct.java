@@ -26,14 +26,15 @@ public class ManageProduct {
 
     public void searchProduct(String name) {
         for (int i = 0; i < manageProduct.size(); i++) {
-            if (manageProduct.get(i).getName() == name) {
+            boolean isCheckName = manageProduct.get(i).getName() == name;
+            if (isCheckName) {
                 getInfoProduct(i);
             }
         }
     }
 
     private void getInfoProduct(int i) {
-        System.out.println("Info Product" + (i + 1) + " :");
+        System.out.println("Info Product " + (i + 1) + " :");
         System.out.println("Id : " + manageProduct.get(i).getId());
         System.out.println("Name : " + manageProduct.get(i).getName());
         System.out.println("Price : " + manageProduct.get(i).getPrice());
